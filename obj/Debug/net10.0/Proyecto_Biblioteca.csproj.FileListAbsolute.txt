@@ -1,0 +1,15 @@
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\bin\Debug\net10.0\Proyecto_Biblioteca.exe
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\bin\Debug\net10.0\Proyecto_Biblioteca.deps.json
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\bin\Debug\net10.0\Proyecto_Biblioteca.runtimeconfig.json
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\bin\Debug\net10.0\Proyecto_Biblioteca.dll
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\bin\Debug\net10.0\Proyecto_Biblioteca.pdb
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.AssemblyInfoInputs.cache
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.AssemblyInfo.cs
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.sourcelink.json
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.dll
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\refint\Proyecto_Biblioteca.dll
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.pdb
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\Proyecto_Biblioteca.genruntimeconfig.cache
+C:\Users\daaba\Desktop\URL\SEMESTRE IV\Proyectos_c\Estructuras2\Proyecto_Biblioteca\obj\Debug\net10.0\ref\Proyecto_Biblioteca.dll
