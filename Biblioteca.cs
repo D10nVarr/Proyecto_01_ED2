@@ -695,7 +695,7 @@ namespace SistemaBiblioteca
             return catalogo.Buscar(codigo) != null;
         }
 
-        public void RegistrarLibro(int codigo, string titulo, string autor, string categoria, int copias)
+        public void RegistrarLibro(int codigo, string titulo, string autor, string categoria, int copias, int prestamos = 0)
         {
             Libro? libroExistente = catalogo.Buscar(codigo);
 
@@ -714,12 +714,12 @@ namespace SistemaBiblioteca
                     Autor = autor,
                     Categoria = categoria,
                     CopiasDisponibles = copias,
-                    VecesPrestado = 0
+                    VecesPrestado = prestamos 
                 };
 
                 catalogo.Insertar(nuevoLibro);
                 heapExistencias.Insertar(copias, codigo);
-                heapPrestamos.Insertar(0, codigo);
+                heapPrestamos.Insertar(prestamos, codigo); 
                 
                 Console.WriteLine($"\nLibro: '{titulo}' registrado correctamente");
             }
@@ -862,21 +862,21 @@ namespace SistemaBiblioteca
         {
             GestorBiblioteca biblioteca = new GestorBiblioteca();
             bool ejecutando = true;
-            biblioteca.RegistrarLibro(1, "El Principito", "Antoine de Saint-Exupéry", "Literatura", 4);
-            biblioteca.RegistrarLibro(2, "Clean Code", "Robert C. Martin", "Tecnología", 2);
-            biblioteca.RegistrarLibro(3, "Cien años de soledad", "Gabriel García Márquez", "Literatura", 5);
-            biblioteca.RegistrarLibro(4, "Introducción a los algoritmos", "Cormen et al.", "Tecnología", 3);
-            biblioteca.RegistrarLibro(5, "1984", "George Orwell", "Literatura", 2);
-            biblioteca.RegistrarLibro(6, "El universo en una cáscara de nuez", "Stephen Hawking", "Ciencia", 3);
-            biblioteca.RegistrarLibro(7, "Don Quijote de la Mancha", "Miguel de Cervantes", "Literatura", 4);
-            biblioteca.RegistrarLibro(8, "Cosmos", "Carl Sagan", "Ciencia", 2);
-            biblioteca.RegistrarLibro(9, "Design Patterns", "Gamma et al.", "Tecnología", 1);
-            biblioteca.RegistrarLibro(10, "Breve historia del tiempo", "Stephen Hawking", "Ciencia", 3);
-            biblioteca.RegistrarLibro(11, "Dune", "Frank Herbert", "Ciencia Ficción", 2);
-            biblioteca.RegistrarLibro(12, "El hobbit", "J.R.R. Tolkien", "Fantasía", 4);
-            biblioteca.RegistrarLibro(13, "Fundamentos de bases de datos", "Elmasri y Navathe", "Tecnología", 3);
-            biblioteca.RegistrarLibro(14, "La guerra de los mundos", "H.G. Wells", "Ciencia Ficción", 2);
-            biblioteca.RegistrarLibro(15, "Sapiens", "Yuval Noah Harari", "Historia", 3);
+            biblioteca.RegistrarLibro(1, "El Principito", "Antoine de Saint-Exupéry", "Literatura", 4, 18);
+            biblioteca.RegistrarLibro(2, "Clean Code", "Robert C. Martin", "Tecnología", 2, 31);
+            biblioteca.RegistrarLibro(3, "Cien años de soledad", "Gabriel García Márquez", "Literatura", 5, 24);
+            biblioteca.RegistrarLibro(4, "Introducción a los algoritmos", "Cormen et al.", "Tecnología", 3, 12);
+            biblioteca.RegistrarLibro(5, "1984", "George Orwell", "Literatura", 2, 27);
+            biblioteca.RegistrarLibro(6, "El universo en una cáscara de nuez", "Stephen Hawking", "Ciencia", 3, 9);
+            biblioteca.RegistrarLibro(7, "Don Quijote de la Mancha", "Miguel de Cervantes", "Literatura", 4, 15);
+            biblioteca.RegistrarLibro(8, "Cosmos", "Carl Sagan", "Ciencia", 2, 21);
+            biblioteca.RegistrarLibro(9, "Design Patterns", "Gamma et al.", "Tecnología", 1, 34);
+            biblioteca.RegistrarLibro(10, "Breve historia del tiempo", "Stephen Hawking", "Ciencia", 3, 6);
+            biblioteca.RegistrarLibro(11, "Dune", "Frank Herbert", "Ciencia Ficción", 2, 19);
+            biblioteca.RegistrarLibro(12, "El hobbit", "J.R.R. Tolkien", "Fantasía", 4, 22);
+            biblioteca.RegistrarLibro(13, "Fundamentos de bases de datos", "Elmasri y Navathe", "Tecnología", 3, 11);
+            biblioteca.RegistrarLibro(14, "La guerra de los mundos", "H.G. Wells", "Ciencia Ficción", 2, 16);
+            biblioteca.RegistrarLibro(15, "Sapiens", "Yuval Noah Harari", "Historia", 3, 28);
 
             while (ejecutando)
             {
@@ -913,7 +913,7 @@ namespace SistemaBiblioteca
                         {
                             Console.WriteLine("Este libro ya existe dentro de la libreria.");
                             int copias = LeerEntero("Cantidad de copias a sumar: ");
-                            biblioteca.RegistrarLibro(codigo, "", "", "", copias);
+                            biblioteca.RegistrarLibro(codigo, "", "", "", copias, 0); 
                         }
                         else
                         {
@@ -921,7 +921,8 @@ namespace SistemaBiblioteca
                             Console.Write("Autor: "); string autor = Console.ReadLine() ?? "";
                             Console.Write("Categoría: "); string categoria = Console.ReadLine() ?? "";
                             int copias = LeerEntero("Cantidad de copias a ingresar: ");
-                            biblioteca.RegistrarLibro(codigo, titulo, autor, categoria, copias);
+                            int prestamos = LeerEntero("Cantidad de préstamos históricos: ");
+                            biblioteca.RegistrarLibro(codigo, titulo, autor, categoria, copias, prestamos);
                         }
                         break;
                     case 2:
