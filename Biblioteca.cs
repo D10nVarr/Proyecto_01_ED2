@@ -862,6 +862,21 @@ namespace SistemaBiblioteca
         {
             GestorBiblioteca biblioteca = new GestorBiblioteca();
             bool ejecutando = true;
+            biblioteca.RegistrarLibro(1, "El Principito", "Antoine de Saint-Exupéry", "Literatura", 4);
+            biblioteca.RegistrarLibro(2, "Clean Code", "Robert C. Martin", "Tecnología", 2);
+            biblioteca.RegistrarLibro(3, "Cien años de soledad", "Gabriel García Márquez", "Literatura", 5);
+            biblioteca.RegistrarLibro(4, "Introducción a los algoritmos", "Cormen et al.", "Tecnología", 3);
+            biblioteca.RegistrarLibro(5, "1984", "George Orwell", "Literatura", 2);
+            biblioteca.RegistrarLibro(6, "El universo en una cáscara de nuez", "Stephen Hawking", "Ciencia", 3);
+            biblioteca.RegistrarLibro(7, "Don Quijote de la Mancha", "Miguel de Cervantes", "Literatura", 4);
+            biblioteca.RegistrarLibro(8, "Cosmos", "Carl Sagan", "Ciencia", 2);
+            biblioteca.RegistrarLibro(9, "Design Patterns", "Gamma et al.", "Tecnología", 1);
+            biblioteca.RegistrarLibro(10, "Breve historia del tiempo", "Stephen Hawking", "Ciencia", 3);
+            biblioteca.RegistrarLibro(11, "Dune", "Frank Herbert", "Ciencia Ficción", 2);
+            biblioteca.RegistrarLibro(12, "El hobbit", "J.R.R. Tolkien", "Fantasía", 4);
+            biblioteca.RegistrarLibro(13, "Fundamentos de bases de datos", "Elmasri y Navathe", "Tecnología", 3);
+            biblioteca.RegistrarLibro(14, "La guerra de los mundos", "H.G. Wells", "Ciencia Ficción", 2);
+            biblioteca.RegistrarLibro(15, "Sapiens", "Yuval Noah Harari", "Historia", 3);
 
             while (ejecutando)
             {
